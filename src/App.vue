@@ -1,32 +1,79 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <div  class="container-fluid nav-custom">
+      <!-- L'intérieur de la barre de navigation -->
+      <div class="row">
+        <!-- Colonne du logo (2 colonnes) -->
+        <div class="col-3 custom-col">
+          <a href="#" class="text-blue custom-logo"><p>My Prortfolio</p></a>
+        </div>
+
+        <!-- Colonne de la navigation principale (6 colonnes) -->
+        <div class="col-6">
+          <nav>
+          <router-link to="/">Home</router-link> 
+          <router-link to="/about">About Us</router-link>
+          <router-link to="/Protfolio">Protfolio</router-link>
+          <router-link to="/Project">Project</router-link>
+          <router-link to="/Gallery">Gallery</router-link>
+          <router-link to="/Contact">Contact</router-link>
+          
+        </nav>
+        </div>
+
+        <!-- Colonne des boutons (4 colonnes) -->
+        <div class="col-3 custom-col custom-col2">
+          <input
+            v-if="isSearchInputVisible"
+            type="text"
+            class="form-control custom-width"
+            placeholder="Recherche..."
+            @blur="hideSearchInput"
+          />
+
+          <button
+            @click="toggleSearchInput"
+            class="btn"  >
+            <b-icon icon="search" class="mr-1" />
+          </button>
+
+          <b-button variant="outline-success" id="btn-get-started" >GET STARTED</b-button>
+        </div>
+      </div>
+      </div>
+
+      <router-view/>
+      
+    
   </div>
+
+  
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+/* eslint-disable no-unused-vars */
+export default {
 
-nav {
-  padding: 30px;
-}
+  // ... Autres propriétés du composant ...
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  data() {
+    return {
+      isSearchInputVisible: false,
+    };
+  },
+  methods: {
+    toggleSearchInput() {
+      this.isSearchInputVisible = !this.isSearchInputVisible;
+    },
+    hideSearchInput() {
+      this.isSearchInputVisible = false;
+    },
+  },
 }
+</script>
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style scoped>
+@import './assets/CSS/app_vue.css'
 </style>
+

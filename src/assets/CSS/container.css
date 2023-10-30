@@ -1,0 +1,65 @@
+.costum-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .custom-col-welcome {
+    margin-left: 40px !important;
+    text-align: left;
+  } 
+.custom-container-about {
+
+    margin: 55px 0px !important;
+
+}
+
+.custom-col-about {
+    text-align: left;
+}
+
+
+.google-maps {
+
+  margin-right: 16px !important;
+}
+
+.custom-input{
+
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-radius: 0% !important;
+  padding-left: 0 !important;
+  
+}
+
+.custom-footer{
+
+  height: 400px;
+  background-color: rgb(243, 243, 243);
+  border-top: 1px solid;
+  border-color: rgb(185, 178, 178);
+}
+
+.bottom-element {
+  width: 100%;
+
+  bottom: 0;
+  left: 20px;
+  text-align: left;
+  
+}
+
+.bottom-element p{
+  padding: 0px 30px;
+}
+.bottom-element hr{
+  margin: 15px 20px;
+}
+
+.custom-float-right {
+  float: right !important;
+
+}

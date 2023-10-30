@@ -1,0 +1,9 @@
+.check-icon {
+    color: rgb(42, 161, 88); /* Couleur verte */
+    margin-right: 5px; /* Espace entre l'icône et le texte */
+    font-size: 1rem; /* Taille de l'icône */
+  }
+
+  .margin-icon{
+    margin-left: 50px;
+  }

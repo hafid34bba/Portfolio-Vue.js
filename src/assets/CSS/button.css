@@ -1,0 +1,61 @@
+.custom-button{
+    border: 0px !important;
+    border-radius: 30px !important;
+    
+  }
+
+  .custom-button1{
+   background-color: rgb(66, 167, 96) !important;
+  }
+  .custom-button2{
+    margin-left: 10px;
+    background-color: rgb(84, 41, 182) !important;
+  }
+
+  .custom-button-group{
+    margin-top: 40px !important;
+    
+  }
+
+  .custom-ml{
+    margin-left: 35px;
+  }
+
+  .custom-button-port{
+    background-color: rgb(204, 207, 206) ;
+    color : black;
+    padding : 5px 10px;
+  }
+
+  .custom-button-port:active{
+    background-color: rgb(66, 167, 96) ;
+    color : white;
+  }
+
+  .active-button {
+    background-color: rgb(66, 167, 96) ; /* Couleur de fond verte */
+    color: white; /* Couleur du texte blanche */
+  }
+
+
+
+#rating-inline{
+  border: 0px !important;
+  color:rgb(231, 217, 13);
+  
+}
+
+.custom-rating {
+  margin-left: 37px !important;
+}
+
+.send-button {
+  color: white !important;
+  font-weight: 600 !important; 
+  padding: 6px 15px !important;
+}
+
+.subsribe-button{
+ border-radius: 20px !important; 
+}
+

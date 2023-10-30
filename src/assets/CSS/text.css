@@ -1,0 +1,64 @@
+.text-ipsum {
+  margin-top: 40px;
+
+  margin-right: 10%;
+}
+
+.lorem-ipsum-2 {
+  font-size: larger;
+  color: rgb(110, 101, 101);
+  font-weight: 400;
+}
+
+.custom-text h1 {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  text-decoration: none;
+  color: rgb(77, 67, 67);
+  font-size: 50px;
+  margin-right: 10%;
+
+  font-weight: 900;
+  /* padding-top: 100px; */
+}
+
+ul li {
+  padding-bottom: 20px !important;
+  list-style-type: none;
+}
+
+font-awesome-icon {
+  color: green; /* Couleur verte */
+  margin-right: 5px; /* Espace entre l'icône et le texte */
+  font-size: 1rem; /* Taille de l'icône */
+}
+
+.text-titles {
+  font-size: large;
+  font-weight: 200;
+  color: rgb(70, 66, 66);
+}
+
+.bottom-left{
+
+  position:relative;
+  bottom: 25px;
+  left: 5px;
+  color:black;
+  text-align: left;
+}
+
+
+.text-left-custom{
+  text-align: left !important;
+}
+
+.custom-subscribe{
+  width:450px !important;
+  background-color: none;
+  background-color: rgb(243, 243, 243) !important;
+  border: 0.5px solid !important;
+  border-color: rgb(199, 196, 196) !important;
+
+}
