@@ -2,7 +2,7 @@
   <div>
     <b-container fluid class="col-12">
       <b-row>
-        <b-col class="custom-text costum-container custom-col-welcome">
+        <b-col class="col-12 col-md-5  custom-text costum-container custom-col-welcome">
           <div ><h1>Welcome to our page 1</h1></div>
           <div>
             <p class="text-ipsum">
@@ -21,7 +21,7 @@
           </div>
         </b-col>
 
-        <b-col class="image-container">
+        <b-col class="col-12 col-md-5 image-container">
           <div>
             <b-img
               :src="require('../assets/images/colab.jpg')"

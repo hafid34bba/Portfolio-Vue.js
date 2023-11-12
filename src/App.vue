@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <div  class="container-fluid nav-custom">
+   
+    <div :class="{'nav-custom': !isFixed, 'fixed-nav': isFixed, 'container-fluid':true}" >
       <!-- L'intérieur de la barre de navigation -->
       <div class="row">
         <!-- Colonne du logo (2 colonnes) -->
-        <div class="col-3 custom-col">
+        <div class="col-12 col-sm-3 custom-col">
           <a href="#" class="text-blue custom-logo"><p>My Prortfolio</p></a>
         </div>
 
         <!-- Colonne de la navigation principale (6 colonnes) -->
-        <div class="col-6">
+        <div class="col-12 col-sm-9 col-lg-6 mw-100">
           <nav>
           <router-link to="/">Home</router-link> 
           <router-link to="/about">About Us</router-link>
@@ -22,7 +23,7 @@
         </div>
 
         <!-- Colonne des boutons (4 colonnes) -->
-        <div class="col-3 custom-col custom-col2">
+        <div class="col-12 m-4 m-lg-auto col-lg-3  custom-col custom-col2">
           <input
             v-if="isSearchInputVisible"
             type="text"
@@ -42,7 +43,7 @@
       </div>
       </div>
 
-      <router-view/>
+      <router-view></router-view>
       
     
   </div>
@@ -60,8 +61,17 @@ export default {
   data() {
     return {
       isSearchInputVisible: false,
+      isFixed : false,
     };
   },
+
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+
   methods: {
     toggleSearchInput() {
       this.isSearchInputVisible = !this.isSearchInputVisible;
@@ -69,6 +79,19 @@ export default {
     hideSearchInput() {
       this.isSearchInputVisible = false;
     },
+
+    
+    handleScroll() {
+      // Vous pouvez ajuster la valeur de défilement souhaitée (par exemple, 100 pixels).
+      
+      const scrollY = window.scrollY;
+      console.log(scrollY);
+      if (scrollY >100) {
+        this.isFixed = true;
+      } else {
+        this.isFixed = false;
+      }
+    }
   },
 }
 </script>

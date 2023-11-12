@@ -3,7 +3,7 @@
         <b-container fluid class="col-12 custom-container-about">
             <b-row> 
 
-                <b-col > 
+                <b-col class="col-12 col-md-6 order-2 order-md-1"> 
                     <b-img
               :src="require('../assets/images/meeting.jpg')"
               fluid-grow
@@ -11,7 +11,7 @@
             ></b-img>
                 </b-col>
 
-                <b-col class="  costum-container custom-col-about">
+                <b-col class="col-12 col-md-6 order-1 order-md-2 costum-container custom-col-about">
 
                     <div style="padding-left:20px;" > <h2> About Us </h2> </div>
 

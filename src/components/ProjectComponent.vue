@@ -12,8 +12,9 @@
         <b-col
           v-for="index in 3"
           :key="index"
-          cols="4"
-          :class="{ 'ml-4': index > 1, 'mb-8': true, 'text-left': true }"
+
+          :class="{'col-12':true, 'col-md-4':true, 'ml-4': index > 1, 'mb-4': true,'text-left': true }"
+          class = "d-flex flex-column align-items-center  d-md-block"
         >
           <b-card
             img-alt="Image"

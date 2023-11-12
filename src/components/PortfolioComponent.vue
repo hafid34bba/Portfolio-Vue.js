@@ -24,7 +24,7 @@
     <!-- Images -->
     <b-container container-fluid class="col-12 mb-5">
       <b-row >
-        <b-col v-for="index in 4" :key="index" cols="3" :class="{ 'ml-2': index > 1 }">
+        <b-col v-for="index in 4" :key="index" class="col-12 col-md-3" :class="{ 'ml-2': index > 1 }">
           <b-img
           :src="activeImage"
             fluid-grow
@@ -35,7 +35,7 @@
         </b-col>
       </b-row>
       <b-row align-h="center">
-        <b-col v-for="index in 3" :key="index" cols="3" :class="{ 'ml-2': index > 1 }">
+        <b-col v-for="index in 3" :key="index"  :class="{ 'col-12':true, 'col-md-3':true, 'ml-2': index > 1 }">
           <b-img
             :src="activeImage"
             fluid-grow

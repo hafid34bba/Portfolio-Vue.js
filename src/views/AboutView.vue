@@ -1,5 +1,5 @@
 <template>
-  <div class="view-margin" >
+  <div  class="mt-5">
     
     <AboutComponent />
     <FooterComponent />
